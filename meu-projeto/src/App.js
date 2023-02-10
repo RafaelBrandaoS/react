@@ -1,23 +1,20 @@
-import './App.css';
+import './App.css'
+import HelloWorld from './components/HelloWorld'
+import SayMyName from './components/SayMyName'
+import Pessoa from './components/Pessoa'
 
 function App() {
-    const name = 'Rafael'
-    const newName = name.toUpperCase()
-
-    function soma(a, b) {
-      return a + b
-    }
-
-    const url = 'https://via.placeholder.com/150'
+  const nome = 'Marta'
 
   return (
     <div className="App">
-      <h2>Alterando JSX</h2>
-      <p>Olá, {newName}</p>
-      <p>soma: {soma(1, 4)}</p>
-      <img src={url} alt='minha imagem'/>
+      <HelloWorld />
+      <SayMyName nome="Pedro" />
+      <SayMyName nome={nome} />
+      <Pessoa nome="Rafael" idade="17" profissao="Programador" foto="https://via.placeholder.com/150" />
     </div>
-  );
+    
+  )
 }
 
-export default App;
+export default App
