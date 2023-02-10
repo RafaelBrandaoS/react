@@ -5,8 +5,9 @@ function List() {
         <>
             <h1>Minha lista</h1>
             <ul>
-                <Item marca="Ferrari" />
-                <Item marca="Lamborghini" />
+                <Item marca="Ferrari" ano_lancamento={2020} />
+                <Item marca="Lamborghini" ano_lancamento={2021} />
+                <Item />
             </ul>
         </>
     )
